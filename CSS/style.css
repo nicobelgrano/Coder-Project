@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    letter-spacing: .3px;
+    
+}
+
+html{
+    width: 100%;
+}
+body{
+    background-image: url(../Elements/cibercity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    color: white;
+    width: 74%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+}
+
+header{
+    display: flex;
+    margin-bottom: 1.7rem;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+
+.logo h1{
+    color: white;
+    font-size: 1.3rem;
+    margin-right: 4rem;
+    margin-left: 0;
+
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav ul li a{
+    padding-inline: .7rem;
+    text-decoration: none;
+    color: rgb(183, 180, 180);
+    transition: .3s;
+}
+
+nav ul li a:hover{
+    color: white;
+    transition: .2s;
+}
+
+.active a{
+    color: white;
+}
+
+.search{
+    display: flex;
+}
+
+.search textarea{
+    text-decoration: none;
+    background-color: rgb(56, 56, 56);
+    color: grey;
+    font-size: .7rem;
+    padding: .3rem;
+    border: none;
+    border-radius: 2rem;
+    display: flex;
+    text-align: start;
+}
+
+.content{
+    display: grid;
+    grid-template-areas: 
+    "t1 main main t2"
+    "t3 t4 t5 t6"
+}
+
+.tarjetamain{
+    grid-area: main;
+    padding: 2rem;
+    height: 30vh;
+    border-radius: 2rem;
+    margin-bottom: 1.4rem;
+    margin-inline: .4rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 2.6rem;
+    font-weight: bold;
+    margin: 1rem;
+    letter-spacing: 1.5px;
+}
+
+h2{
+    margin-bottom: 2.2rem;
+    color: white;
+    font-size: .9rem;
+}
+
+.tarjetamain button{
+    background: linear-gradient(101deg,#fc2fa4,#902dff,#4b4cf6);
+    color: white;
+    font-size: .9rem;
+    padding-block: 1.05rem;
+    padding-inline: 2.2rem;
+    
+    border: none;
+    border-radius: 2rem;
+    transition: .3s;
+}
+
+.tarjetamain button:hover{
+    transform: scale(1.03);
+    padding-inline: 2.3rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.tarjetita{
+    padding: .7rem;
+    height: 30vh;
+    border-radius: 2rem;
+    margin-inline: .4rem;
+    background-size: 100%;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter:brightness(90%);
+    transition: .4s;
+}
+
+.tarjetita:hover{
+    transform: translate(0, -5px);
+    background-size: 108%;
+    filter:brightness(100%);
+    cursor: pointer;
+}
+
+
+.info{
+    background-color: rgba(0, 0, 0, 0.437);
+    display: flex;
+    align-self: flex-end;
+    gap: 2rem;
+    border-radius: 2rem;
+    padding-inline: .4rem;
+    padding-block: .4rem;
+    
+}
+
+.info button{
+    border-radius: 2rem;
+    padding-inline: 01rem;
+    padding-block: 0rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-style: none;
+}
+
+h5{
+    font-size: 10px;
+}
+
+h4{
+    font-size: 12px;
+}
+
+.t1{
+    grid-area: t1;
+    background-image: url(../Elements/T1.jpg);
+}
+
+
+.t2{
+    grid-area: t2;
+    background-image: url(../Elements/T2.jpg);
+}
+
+.t3{
+    grid-area: t3;
+    background-image: url(../Elements/T3.jpg);
+}
+
+.t4{
+    grid-area: t4;
+    background-image: url(../Elements/T4.jpg);
+}
+
+.t5{
+    grid-area: t5;
+    background-image: url(../Elements/icarius-jpeg-G8CByeV0_Bo-unsplash.jpg);
+}
+
+.t6{
+    grid-area: t6;
+    background-image: url(../Elements/T6.jpg);
+}
+
+
+
